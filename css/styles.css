@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box; /* Ensures padding and borders are included in the element's width/height */
     font-family: "Montserrat", serif; /* Default font for all elements */
+    font-weight: 400;
     font-size: 14px; /* Base font size */
     color: hsl(228, 12%, 48%); /* Default text color */
     line-height: 150%; /* Improves text readability */
@@ -43,14 +44,24 @@ body {
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.38rem;
+    display: inline;
 }
 
 /* Title and Discount Price */
 .card-title, .product-discount-price {
     font-family: "Fraunces", serif;
     font-weight: 700;
-    font-size: calc(2.050rem + .9vw); /* Responsive font size */
+    font-size: calc(2.050rem + 0.9vw); /* Responsive font size */
     line-height: 2.475rem;
+}
+
+.card-title {
+    color: hsl(212, 21%, 14%);
+    margin: 0.63rem 0 1.13rem;
+}
+
+.card-text, .product-old-price {
+    font-size: 14.5px;
 }
 
 /* Price Section */
@@ -62,11 +73,16 @@ body {
     margin-top: 1.69rem;
 }
 
+.product-discount-price {
+    color: hsl(158, 36%, 37%);
+}
+
 /* Button */
 .btn {
     background-color: hsl(158, 36%, 37%);
     font-weight: 700;
     padding: 1rem 0;
+    border-width: 0;
     width: 100%;
     margin-top: 1.41rem;
 }
@@ -74,6 +90,18 @@ body {
 .btn:hover, .btn:active {
     cursor: pointer; /* Changes cursor on hover */
     background-color: hsl(158, 36%, 18%); /* Darkens button on hover */
+}
+
+.btn img {
+    margin-right: 0.5rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
 
 /* Responsive Styles (Screens >= 760px) */
@@ -92,6 +120,22 @@ body {
 
     .card-body {
         padding: 2rem; /* Adds more spacing inside the card body */
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+    }
+
+    .card-title, .product-discount-price {
+        font-size: calc(1.5rem + .9vw);
+    }
+
+    .card-title {
+        margin: 1.6rem 0 2rem;
+    }
+
+    .card-text, .product-old-price {
+        font-size: 15px;
     }
 
     .product-prices {

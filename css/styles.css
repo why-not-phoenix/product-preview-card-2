@@ -1,0 +1,100 @@
+/* Global Styles */
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's width/height */
+    font-family: "Montserrat", serif; /* Default font for all elements */
+    font-size: 14px; /* Base font size */
+    color: hsl(228, 12%, 48%); /* Default text color */
+    line-height: 150%; /* Improves text readability */
+}
+
+body {
+    /* Centers content using flexbox */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh; /* Ensures body spans full viewport height */
+    margin: 0; /* Removes default margin */
+    padding: 2.7rem 0; /* Adds vertical padding */
+}
+
+/* Card Container */
+.card {
+    width: 24.571rem; /* Fixed width for smaller screens */
+    border-radius: 0.75rem;
+    background-color: hsl(0, 0%, 100%);
+    border-width: 0; /* Removes border */
+}
+
+/* Product Image */
+.product-image {
+    border-radius: 0.75rem 0.75rem 0 0;
+    max-height: 100%; /* Ensures image scales correctly */
+}
+
+/* Card Body */
+.card-body {
+    padding: 1.475rem 1.755rem;
+}
+
+.card-subtitle {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.38rem;
+}
+
+/* Title and Discount Price */
+.card-title, .product-discount-price {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: calc(2.050rem + .9vw); /* Responsive font size */
+    line-height: 2.475rem;
+}
+
+/* Price Section */
+.product-prices {
+    /* Aligns discount and old price horizontally */
+    display: flex;
+    align-items: center;
+    gap: 1.357rem;
+    margin-top: 1.69rem;
+}
+
+/* Button */
+.btn {
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 1.41rem;
+}
+
+.btn:hover, .btn:active {
+    cursor: pointer; /* Changes cursor on hover */
+    background-color: hsl(158, 36%, 18%); /* Darkens button on hover */
+}
+
+/* Responsive Styles (Screens >= 760px) */
+@media (min-width: 760px) {
+    body {
+        padding: 12.5rem 0; /* Adjusts vertical padding for larger screens */
+    }
+
+    .card {
+        width: 42.857rem; /* Wider card for desktop view */
+    }
+
+    .product-image {
+        border-radius: 0.75rem 0 0 0.75rem; /* Adjusts image corners for layout */
+    }
+
+    .card-body {
+        padding: 2rem; /* Adds more spacing inside the card body */
+    }
+
+    .product-prices {
+        margin-top: 2rem; /* Increases spacing above prices */
+    }
+}

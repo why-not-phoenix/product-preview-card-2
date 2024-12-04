@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/why-not-phoenix/product-preview-card-2](https://github.com/why-not-phoenix/product-preview-card-2)
+- Live Site URL: [https://why-not-phoenix.github.io/product-preview-card-2/](https://why-not-phoenix.github.io/product-preview-card-2/)
 
 ## My process
 

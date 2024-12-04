@@ -77,6 +77,13 @@ body {
     color: hsl(158, 36%, 37%);
 }
 
+/* Old Price Styles */
+.product-old-price {
+    /* Strikes through the old price to show it is no longer applicable */
+    text-decoration: line-through;
+}
+
+
 /* Button */
 .btn {
     background-color: hsl(158, 36%, 37%);
